@@ -31,3 +31,4 @@ This an application to test NamedPipelines.
 ### HISTORY ###
 
 * 20191030 - Initial repository.
+* 20191031 - Added Unit Tests.
