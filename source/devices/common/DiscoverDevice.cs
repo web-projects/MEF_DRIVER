@@ -11,17 +11,17 @@ namespace Devices.Common
         [Inject]
         internal IDeviceProvider DeviceProvider { get; set; }
 
-        public bool DiscoverDevices()
+        public bool DiscoverDevices(string name)
         {
-            ICardDevice device = DeviceProvider.GetDevice("Verifone Device");
+            ICardDevice device = DeviceProvider.GetDevice(name);
 
             if (device == null)
                 throw new Exception("Unable to get a device");
 
-            if (!(device is VerifoneDevice))
-                throw new Exception("Only Verifone Devices are currently supported.");
+            //if (!(device is VerifoneDevice))
+            //    throw new Exception("Only Verifone Devices are currently supported.");
 
-            return true;
+            return device.Name.Equals(name, StringComparison.InvariantCultureIgnoreCase);
         }
     }
 }
