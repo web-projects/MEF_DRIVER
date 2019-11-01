@@ -5,8 +5,9 @@ using Ninject.Modules;
 using System.Reflection;
 using Devices.Common;
 using Devices.Common.Interfaces;
+using Devices.Verifone;
 
-namespace VerifoneDevice.Tests
+namespace Verifone.Device.Tests
 {
     public class VerifoneDeviceTests
     {

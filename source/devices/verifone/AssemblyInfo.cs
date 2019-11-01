@@ -1,5 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("CommonDevice.Tests", AllInternalsVisible = true)]
-[assembly: InternalsVisibleTo("VerifoneDevice.Tests", AllInternalsVisible = true)]
+[assembly: InternalsVisibleTo("Common.Device.Tests", AllInternalsVisible = true)]
+[assembly: InternalsVisibleTo("Verifone.Device.Tests", AllInternalsVisible = true)]
 [assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]

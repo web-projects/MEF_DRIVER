@@ -6,6 +6,8 @@ using Moq;
 using Ninject;
 using Devices.Common;
 using Devices.Common.Interfaces;
+using Devices.IdTech;
+using Devices.Verifone;
 
 namespace Devices.Tests.Common
 {

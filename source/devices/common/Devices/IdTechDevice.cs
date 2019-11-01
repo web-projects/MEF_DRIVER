@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Devices.Common;
 
-namespace Devices.IdTech
+namespace Devices.Common.Devices
 {
     internal class IdTechDevice : CardDevice
     {

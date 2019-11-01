@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{DB480D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devices.Common", "devices\common\Devices.Common.csproj", "{E811B54A-92F7-4A8D-ABC2-F4910CC99414}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonDevice.Tests", "CommonDevice.Tests", "{7D7BA63B-34DA-440E-8C51-7CF0CDE7D811}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common.Device.Tests", "Common.Device.Tests", "{7D7BA63B-34DA-440E-8C51-7CF0CDE7D811}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "id-tech", "id-tech", "{D7F05CB6-202C-49CC-8993-6C90FCA6BE03}"
 EndProject
@@ -25,15 +25,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devices.IdTech", "devices\i
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devices.Verifone", "devices\verifone\Devices.Verifone.csproj", "{EA48C1B7-7271-4485-98F3-F56C3A2E5937}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonDevice.Tests", "..\tests\devices\CommonDevice.Tests\CommonDevice.Tests.csproj", "{4C7003AF-32A3-42AE-8E38-3109F2625D2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Device.Tests", "..\tests\devices\CommonDevice.Tests\Common.Device.Tests.csproj", "{4C7003AF-32A3-42AE-8E38-3109F2625D2F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VerifoneDevice.Tests", "VerifoneDevice.Tests", "{64593764-AD0E-48F8-ACF7-787A4ED12C78}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Verifone.Device.Tests", "Verifone.Device.Tests", "{64593764-AD0E-48F8-ACF7-787A4ED12C78}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VerifoneDevice.Tests", "..\tests\devices\VerifoneDevice.Tests\VerifoneDevice.Tests.csproj", "{EE4878B8-B256-4DC2-83D1-33229BDC0548}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verifone.Device.Tests", "..\tests\devices\VerifoneDevice.Tests\Verifone.Device.Tests.csproj", "{EE4878B8-B256-4DC2-83D1-33229BDC0548}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdTechDevice.Tests", "IdTechDevice.Tests", "{8170E698-58BD-4C88-91BF-38A3C3C2D8D6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdTech.Device.Tests", "IdTech.Device.Tests", "{8170E698-58BD-4C88-91BF-38A3C3C2D8D6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdTechDevice.Tests", "..\tests\devices\IdTechDevice.Tests\IdTechDevice.Tests.csproj", "{19383F91-2889-426D-96AD-92283D2EFD53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdTech.Device.Tests", "..\tests\devices\IdTechDevice.Tests\IdTech.Device.Tests.csproj", "{19383F91-2889-426D-96AD-92283D2EFD53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

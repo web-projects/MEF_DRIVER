@@ -5,8 +5,9 @@ using Ninject.Modules;
 using System.Reflection;
 using Devices.Common;
 using Devices.Common.Interfaces;
+using Devices.IdTech;
 
-namespace IdTechDevice.Tests
+namespace IdTech.Device.Tests
 {
     public class IdTechDeviceTests
     {

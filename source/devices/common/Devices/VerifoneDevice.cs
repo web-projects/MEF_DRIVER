@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Devices.Common;
 
-namespace Devices.Verifone
+namespace Devices.Common.Devices
 {
     internal class VerifoneDevice : CardDevice
     {
