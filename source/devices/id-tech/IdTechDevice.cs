@@ -11,7 +11,7 @@ namespace Devices.IdTech
     [Export("IdTech-VP5300", typeof(ICardDevice))]
     internal class IdTechDevice : ICardDevice
     {
-        public string Name => "Device IdTech";
+        public string Name => StringValueAttribute.GetStringValue(DeviceType.IdTech);
 
         public void DeviceSetIdle()
         { 

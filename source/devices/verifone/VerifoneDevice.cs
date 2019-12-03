@@ -11,7 +11,7 @@ namespace Devices.Verifone
     [Export("Verifone-UX300", typeof(ICardDevice))]
     internal class VerifoneDevice : ICardDevice
     {
-        public string Name => "Device Verifone";
+        public string Name => StringValueAttribute.GetStringValue(DeviceType.Verifone);
 
         public void DeviceSetIdle()
         {
