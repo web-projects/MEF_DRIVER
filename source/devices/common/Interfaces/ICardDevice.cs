@@ -7,5 +7,7 @@ namespace Devices.Common.Interfaces
     public interface ICardDevice
     {
         string Name { get; }
+
+        void DeviceSetIdle();
     }
 }

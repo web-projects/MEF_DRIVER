@@ -1,12 +1,19 @@
-﻿using System;
+﻿using Devices.Common.Interfaces;
+using System;
 using System.Collections.Generic;
+using System.Composition;
 using System.Text;
 
 namespace Devices.Common.Devices
 {
-    internal class VerifoneDevice : CardDevice
+    [Export(typeof(Common.Interfaces.ICardDevice))]
+    [Export("Verifone Device", typeof(ICardDevice))]
+    internal class VerifoneDevice : ICardDevice
     {
-        internal VerifoneDevice() : base("Verifone Device") { }
+        public string Name => "Device Verifone";
 
+        public void DeviceSetIdle()
+        {
+        }
     }
 }

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.3" />
+    <PackageReference Include="Microsoft.Composition" Version="1.0.31" />
+    <PackageReference Include="Ninject" Version="3.3.4" />
+    <PackageReference Include="System.Composition" Version="1.4.0" />
+    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\common\Devices.Common.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(VisualStudioDir)' != ''">
+    <Exec Command="%25WINDIR%25\System32\XCOPY /y /i /d &quot;$(SolutionDir)devices\id-tech\bin\$(ConfigurationName)\netcoreapp2.0\Devices.IdTech.dll&quot; &quot;$(TargetDir)DevicePlugins\&quot;&#xD;&#xA;%25WINDIR%25\System32\XCOPY /y /i /d &quot;$(SolutionDir)devices\simulator\bin\$(ConfigurationName)\netcoreapp2.0\Devices.Simulator.dll&quot; &quot;$(TargetDir)DevicePlugins\&quot;&#xD;&#xA;%25WINDIR%25\System32\XCOPY /y /i /d &quot;$(SolutionDir)devices\verifone\bin\$(ConfigurationName)\netcoreapp2.0\Devices.Verifone.dll&quot; &quot;$(TargetDir)DevicePlugins\&quot;" />
+  </Target>
+
+</Project>

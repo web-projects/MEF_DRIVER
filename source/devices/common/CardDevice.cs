@@ -10,5 +10,9 @@ namespace Devices.Common
         public string Name { get; }
 
         public CardDevice(string name) => Name = name;
+
+        public void DeviceSetIdle()
+        {
+        }
     }
 }
