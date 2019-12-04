@@ -34,3 +34,4 @@ This an application to test NamedPipelines.
 * 20191031 - Added Unit Tests.
 * 20191101 - Fixes to Unit Tests.
 * 20191203 - Added additional devices.
+           - Added Plugin loader.

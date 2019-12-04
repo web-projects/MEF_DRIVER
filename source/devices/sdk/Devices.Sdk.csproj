@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(VisualStudioDir)' != ''">
-    <Exec Command="%25WINDIR%25\System32\XCOPY /y /i /d &quot;$(SolutionDir)devices\id-tech\bin\$(ConfigurationName)\netcoreapp2.0\Devices.IdTech.dll&quot; &quot;$(TargetDir)DevicePlugins\&quot;&#xD;&#xA;%25WINDIR%25\System32\XCOPY /y /i /d &quot;$(SolutionDir)devices\simulator\bin\$(ConfigurationName)\netcoreapp2.0\Devices.Simulator.dll&quot; &quot;$(TargetDir)DevicePlugins\&quot;&#xD;&#xA;%25WINDIR%25\System32\XCOPY /y /i /d &quot;$(SolutionDir)devices\verifone\bin\$(ConfigurationName)\netcoreapp2.0\Devices.Verifone.dll&quot; &quot;$(TargetDir)DevicePlugins\&quot;" />
+    <Exec Command="%25WINDIR%25\System32\XCOPY /y /i /d &quot;$(SolutionDir)devices\id-tech\bin\$(ConfigurationName)\netstandard2.0\Devices.IdTech.dll&quot; &quot;$(TargetDir)DevicePlugins\&quot;&#xD;&#xA;%25WINDIR%25\System32\XCOPY /y /i /d &quot;$(SolutionDir)devices\simulator\bin\$(ConfigurationName)\netstandard2.0\Devices.Simulator.dll&quot; &quot;$(TargetDir)DevicePlugins\&quot;&#xD;&#xA;%25WINDIR%25\System32\XCOPY /y /i /d &quot;$(SolutionDir)devices\verifone\bin\$(ConfigurationName)\netstandard2.0\Devices.Verifone.dll&quot; &quot;$(TargetDir)DevicePlugins\&quot;" />
   </Target>
 
 </Project>

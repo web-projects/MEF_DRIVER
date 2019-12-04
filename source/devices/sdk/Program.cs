@@ -19,7 +19,10 @@ namespace Devices.Sdk
         static void Main(string[] args)
         {
             string pluginPath = Path.Combine(Environment.CurrentDirectory, "DevicePlugins");
-            Initialize(pluginPath);
+            if(Initialize(pluginPath))
+            {
+                LoadPlugin();
+            }
 
         }
 
@@ -37,6 +40,21 @@ namespace Devices.Sdk
             }
 
             return TargetDevice != null;
+        }
+
+        static void LoadPlugin()
+        {
+            Console.WriteLine();
+            Console.WriteLine("===================================");
+            Console.WriteLine("List of available device plugins:");
+            Console.WriteLine("===================================");
+            foreach (var pluginName in DevicePluginLoader.GetAvailableDevicePlugins())
+            {
+                Console.WriteLine(pluginName);
+            }
+            Console.WriteLine();
+            Console.WriteLine($"load: {TargetDevice.Name}");
+            DevicePluginLoader.LoadDevicePlugin(TargetDevice.GetType().Name);
         }
     }
 }
